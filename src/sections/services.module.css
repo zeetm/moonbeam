@@ -1,0 +1,13 @@
+.services {
+  padding: 80px 200px;
+}
+
+.title {
+  margin-top: 110px !important;
+}
+
+@media (max-width: 615px) {
+  .services {
+    padding: 80px 24px;
+  }
+}
