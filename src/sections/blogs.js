@@ -3,49 +3,32 @@ import { Container, Box, Grid } from 'theme-ui';
 import Masonry from 'react-masonry-component';
 import BlockTitle from 'components/block-title';
 import BlogCard from 'components/cards/blog-card';
-
-import blogImage1 from 'assets/blog-1-1.png';
-import blogImage2 from 'assets/blog-1-2.png';
-import blogImage3 from 'assets/blog-1-3.png';
-import blogImage4 from 'assets/blog-1-4.png';
+import blogImage1 from 'assets/mission.jpg';
+import blogImage2 from 'assets/social-change.jpg';
+import blogImage3 from 'assets/vision.jpg';
+import classes from './blogs.module.css'
 
 const BLOG_DATA = [
   {
     image: blogImage1,
-    title: 'How to work with prototype design with adobe xd featuring tools',
+    title: 'Mission',
     description:
-      'The 2019 Innovation by Design Awards honor the designers and businesses solving the problems of today and tomorrow. It is one of the most sought-after design',
-    path: '/',
-    linkLabel: 'Learn More',
-  },
-  {
-    image: null,
-    title:
-      'Antibias receives honorable gift mention at Fast Company’s most Innovation by Design Awards',
-    description: null,
-    path: '/',
-    linkLabel: null,
-  },
-  {
-    image: blogImage3,
-    title: 'Multiple task wireframing with team management perform better',
-    description: null,
+      'Here at Moonbeam Trading Company we strive to provide world-class business and technology services in Canada, with the help of our valued employees and advancing technology.',
     path: '/',
     linkLabel: null,
   },
   {
     image: blogImage2,
-    title: 'Multiple art board prototype with Figma',
-    description:
-      'Beyond launched antibias, a Chrome extension that replaces LinkedIn profile photos',
+    title: 'Social Change',
+    description: 'Our goal is to achieve this by using sustainable products to initiate social change through community partnerships, collaboration, fair trading, ethical farming, and support of living wages. Most importantly, we will continue to care for and support the communities and the environment that we are a part of. ',
     path: '/',
-    linkLabel: 'Learn More',
+    linkLabel: null,
   },
   {
-    image: blogImage4,
+    image: blogImage3,
     title:
-      'Team presentation with latest user interface & experience reach more',
-    description: null,
+      'Vision',
+    description: 'Our vision is to have a positive social impact wherever we do business.',
     path: '/',
     linkLabel: null,
   },
@@ -58,12 +41,13 @@ const masonryOptions = {
 const Blogs = () => {
   return (
     <Box as="section" id="news" sx={styles.blogs}>
-      <Container>
+      <Container className={classes.container}>
         <BlockTitle
-          title="Popular blog post we updated"
-          text="Updete newsfeed blog"
+          title="Mission/Vision"
+          text={null}
         />
-        <Box as={Masonry} options={masonryOptions} sx={styles.blogWrapper}>
+        {/* <Box as={Masonry} options={masonryOptions} sx={styles.blogWrapper}> */}
+        <div className={classes.blogWrapper}>
           {BLOG_DATA.map(
             ({ image, title, description, path, linkLabel }, index) => (
               <BlogCard
@@ -76,7 +60,8 @@ const Blogs = () => {
               />
             )
           )}
-        </Box>
+        </div>
+        {/* </Box> */}
       </Container>
     </Box>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
 import { Link } from '../link';
-
+import classes from './blog-card.module.css'
 import arrowAngle from '../../assets/arrow-angle.svg';
 
 const BlogCard = ({ image, title, description, path, linkLabel }) => {
@@ -10,11 +10,11 @@ const BlogCard = ({ image, title, description, path, linkLabel }) => {
       sx={styles.blogCard}
       className={`blogCard ${image === null ? 'noThumb ' : ' '} ${
         description === null ? 'noDescription  ' : ''
-      } ${linkLabel === null ? 'noLabel ' : ''}`}
+      } ${linkLabel === null ? 'noLabel ' : ''} ${classes.blogCard}`}
     >
       {image !== null && (
-        <Box sx={styles.image}>
-          <Image src={image} alt={title} />
+        <Box sx={styles.image} className={classes.imageWrapper}>
+          <Image src={image} alt={title} className={classes.image} />
         </Box>
       )}
 

@@ -1,0 +1,20 @@
+.blogWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 75%; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media(max-width: 775px) {
+  .blogWrapper {
+    width: 75%;
+  }
+}
