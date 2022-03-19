@@ -1,11 +1,12 @@
 import React from "react";
 import { Box } from 'theme-ui'
+import classes from './featured-card.module.css'
 
 const FeaturedCard = ({ content }) => {
 
   return (
-    <div>
-      <Box sx={styles.featuredCard}>
+    <div className={classes.cardWrapper}>
+      <Box sx={styles.featuredCard} className={classes.card}>
       {content}
       </Box>
     </div>
@@ -21,8 +22,7 @@ const styles = {
     backgroundColor: 'green',
     fontSize: "18px",
     fontFamily: "DM Sans",
-    width: "40%",
-    border: "1px solid black",
+    width: "100%",
     borderRadius: "20px",
     p: "20px"
   }

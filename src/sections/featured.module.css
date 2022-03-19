@@ -1,0 +1,25 @@
+.contentWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 920px) {
+  .contentWrapper {
+    margin-bottom: 240px;
+  }
+}
+
+@media(max-width: 520px) {
+  .contentWrapper {
+    margin-bottom: 300px;
+  }
+}
+
+@media(max-width: 435px) {
+  .contentWrapper {
+    margin-bottom: 440px;
+  }
+}

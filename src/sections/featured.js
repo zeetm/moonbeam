@@ -9,6 +9,7 @@ import dotPattern from "assets/dot-pattern.svg";
 import tech from "assets/tech.png";
 import ecomerceImage from "assets/ecommerce.png";
 import FeaturedCard from "components/cards/featured-card";
+import classes from './featured.module.css'
 
 
 const Featured = () => {
@@ -83,7 +84,7 @@ const Featured = () => {
             </Box>
           </Box>
           <Box sx={styles.tabContent}>
-            <div>
+            <div className={classes.contentWrapper}>
             {tab.active === "technology" && (
               <Image src={tech} alt="tab image" className="tabImage" />
             )}
@@ -211,7 +212,8 @@ const styles = {
     },
     ".tabImage": {
       position: "relative",
-      animation: `${fadeIn} 0.8s linear`
+      animation: `${fadeIn} 0.8s linear`,
+      width: '80%'
     },
     fontFamily: "DM Sans"
   }
