@@ -13,6 +13,7 @@ import Pricing from "sections/pricing";
 import Testimonials from "sections/testimonials";
 import Blogs from "sections/blogs";
 import Subscribe from "sections/subscribe";
+import Employment from "sections/employment";
 
 export default function IndexPage() {
   return (
@@ -28,7 +29,7 @@ export default function IndexPage() {
           <Pricing />
           <Testimonials />
           <Blogs />
-          {/* <FAQ /> */}
+          <Employment/>
           <Subscribe />
         </Layout>
       </StickyProvider>
