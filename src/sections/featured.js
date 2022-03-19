@@ -8,6 +8,9 @@ import { FaCarrot, FaShoppingCart } from "react-icons/fa";
 import dotPattern from "assets/dot-pattern.svg";
 import tech from "assets/tech.png";
 import ecomerceImage from "assets/ecommerce.png";
+import FeaturedCard from "components/cards/featured-card";
+
+
 const Featured = () => {
   const [tab, setTab] = useState({
     active: "technology"
@@ -80,20 +83,24 @@ const Featured = () => {
             </Box>
           </Box>
           <Box sx={styles.tabContent}>
+            <div>
             {tab.active === "technology" && (
               <Image src={tech} alt="tab image" className="tabImage" />
             )}
             {tab.active === "technology" && (
-              <p>this is test text for technology</p>
+              <FeaturedCard content="We also have a passion for using technology to address current social problems while working collaboratively to alleviate societal issues.
+                These challenges are complex and require dedication by multiple parties.
+                We take on projects that create innovative solutions to address climate change, poverty, education, healthcare, senior isolation, public safety, farming and safe drinking water."
+              />
             )}
             {tab.active === "agri" && (
               <Image src={tech} alt="agri image" className="tabImage" />
             )}
-            {tab.active === "agri" && (<p>this is test text for agri-food</p>)}
+            {tab.active === "agri" && (<FeaturedCard content="This is agri test text" />)}
             {tab.active === "trade" && (
               <Image src={tech} alt="tab image" className="tabImage" />
             )}
-            {tab.active === "trade" && (<p>this is test text for trade</p>)}
+            {tab.active === "trade" && (<FeaturedCard content="This is trade test text" />)}
             {tab.active === "ecommerce" && (
               <Image
                 src={ecomerceImage}
@@ -102,8 +109,9 @@ const Featured = () => {
               />
             )}
             {tab.active === "ecommerce" && (
-              <p>this is test text for ecommerce</p>
+              <FeaturedCard content="This is eccomerce test text" />
             )}
+            </div>
           </Box>
         </Container>
       </Box>
