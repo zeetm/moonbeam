@@ -1,14 +1,18 @@
 
 import { css, jsx } from '@emotion/react';
-
+import MoonbeamLogo from '../../assets/mb-logo.png'
+import classes from './footer.module.css'
 import React from 'react';
 import { Box, Text, Container } from 'theme-ui';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
 import logoLight from 'assets/logo-light.svg';
+import Image from "components/image";
+
 export default function Footer() {
+
   return (
-    <Box as="footer" sx={styles.footer}>
+    <Box as="footer" sx={styles.footer} className={classes.footer} >
       <Container sx={styles.container}>
         <Box
           sx={{
@@ -17,7 +21,8 @@ export default function Footer() {
             flexDirection: ['column', null, null, null, null, 'row'],
           }}
         >
-          <Logo image={logoLight} />
+          {/* <Logo image={MoonbeamLogo} className={classes.image} /> */}
+          <img src={MoonbeamLogo} className={classes.image} />
           <Text
             as="p"
             sx={{
@@ -27,15 +32,17 @@ export default function Footer() {
               mt: ['10px', null, null, null, null, '0'],
             }}
           >
-            Copyright by {new Date().getFullYear()} RedQ, Inc
+            Copyright by {new Date().getFullYear()} Moonbeam Inc
           </Text>
         </Box>
-        <Box sx={styles.linksWrap}>
+        <Box sx={styles.linksWrap} className={classes.links} >
           <Link path="/">Home</Link>
-          <Link path="/">Advertise</Link>
-          <Link path="/">Supports</Link>
-          <Link path="/">Marketing</Link>
-          <Link path="/">FAQ</Link>
+          <Link path="/stay-connected">Stay Connected</Link>
+          <Link path="/contact-us">Contact Us</Link>
+          <Link path="/employment">Employment</Link>
+          <Link path="/privacy-policy">Privacy Policy</Link>
+          <Link path="/terms-and-conditions">Terms & Conditions</Link>
+          <Link path="/indigenous-acknowledgements">Indigenous Acknowledgement</Link>
         </Box>
       </Container>
     </Box>

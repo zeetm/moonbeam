@@ -1,0 +1,40 @@
+.links {
+  margin-top: 32px;
+  font-family: sans-serif;
+}
+.links > a {
+  font-size: 18px !important;
+  cursor: pointer;
+}
+
+.links > a:hover {
+  color: #13592a;
+}
+
+.footer {
+}
+
+.image {
+  height: 50%;
+  width: 50%;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+@media(max-width: 1065px) {
+  .links {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 555px) {
+  .links > a {
+    font-size: small !important;
+  }
+
+  .links {
+    width: 80%;;
+  }
+}
+
