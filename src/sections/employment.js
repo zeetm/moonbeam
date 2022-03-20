@@ -12,7 +12,7 @@ const EMPLOYMENT_DATA = [
   //link to post?
   {
     image: applyImage,
-    text: "Discover a wide variety of products.",
+    text: "Apply now!",
     heading: "Data Scientist",
     link: "https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital"
   }
@@ -79,6 +79,7 @@ const styles = {
     fontFamily: "DM Sans"
   },
   heading: {
+    color: "#000000",
     mb: "30px",
     // pt: "60px",
     textAlign: ["center", null, null, null, null, "left"],
@@ -96,7 +97,7 @@ const styles = {
       fontFamily: "DM Sans"
     },
     h3: {
-      color: "#0F2137",
+      color: "#000000",
       fontSize: ["23px", null, null, null, "30px", "36px", "44px"],
       maxWidth: ["100%", null, null, null, null, "90%", "100%"],
       fontWeight: 700,
