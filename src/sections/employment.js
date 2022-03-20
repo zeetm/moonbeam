@@ -5,16 +5,17 @@ import jackpotImage from "assets/jackpot.png";
 import jackpotImage1 from "assets/jackpot-1-1.png";
 import jackpotImage2 from "assets/jackpot-1-2.png";
 import employmentImage from "assets/employment.png"
+import applyImage from "assets/apply.png"
 import classes from "./employment.module.css";
 
 const EMPLOYMENT_DATA = [
   //link to post?
   {
-    image: jackpotImage1,
+    image: applyImage,
     text: "Discover a wide variety of products.",
     heading: "Data Scientist",
     link: "https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital"
-  },
+  }
 ];
 
 const Employment = () => {
@@ -22,7 +23,7 @@ const Employment = () => {
     <Box
       as="section"
       sx={styles.jackpot}
-      id="online-store"
+      id="employment"
       className={classes.jackpotWrapper}
     >
       <Container>
@@ -48,7 +49,7 @@ const Employment = () => {
               ))}
             </Box>
             <Box sx={styles.heading} className={classes.header}>
-              <Heading as="h3">Contact us about our opportunities at</Heading>
+              <Heading as="h3">Contact us about our opportunities at Jobs@moonbeamtrading.ca</Heading>
             </Box>
           </Box>
         </Flex>
@@ -79,7 +80,7 @@ const styles = {
   },
   heading: {
     mb: "30px",
-    pt: "60px",
+    // pt: "60px",
     textAlign: ["center", null, null, null, null, "left"],
     pl: ["0", null, null, "30px"],
     maxWidth: ["80%", null, null, "100%"],

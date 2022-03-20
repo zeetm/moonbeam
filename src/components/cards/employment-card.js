@@ -4,18 +4,18 @@ import classes from "./employment-card.module.css";
 
 const EmploymentCard = ({ image, heading, text, link }) => {
   return (
-    <Box sx={styles.jackpotCard} className={classes.content}>
-      <Box sx={styles.image}>
-        <Image src={image} alt={heading} />
+      <Box sx={styles.jackpotCard} className={classes.content}>
+       <Box sx={styles.image}>
+          <Image src={image} alt={heading} />
+        </Box>
+        <Box sx={styles.content} className={classes.contentText}>
+          <Heading as="h3">{heading}</Heading>
+          <Text as="p">{text}</Text>
+        </Box>
+        <a href={link} target="_blank">
+          <button className={classes.button}>Job Number MTC2101DS</button>
+        </a>
       </Box>
-      <Box sx={styles.content} className={classes.contentText}>
-        <Heading as="h3">{heading}</Heading>
-        <Text as="p">{text}</Text>.
-      </Box>
-      <a href={link} target="_blank">
-        <button className={classes.button}>Job Number MTC2101DS</button>
-      </a>
-    </Box>
   );
 };
 
