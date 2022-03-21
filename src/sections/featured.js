@@ -8,8 +8,11 @@ import { FaCarrot, FaShoppingCart } from "react-icons/fa";
 import dotPattern from "assets/dot-pattern.svg";
 import tech from "assets/tech.png";
 import ecomerceImage from "assets/ecommerce.png";
+import agriImage from "assets/agriFood.png";
+import tradeImage from "assets/trade.png";
 import FeaturedCard from "components/cards/featured-card";
 import classes from './featured.module.css'
+
 
 
 const Featured = () => {
@@ -95,13 +98,13 @@ const Featured = () => {
               />
             )}
             {tab.active === "agri" && (
-              <Image src={tech} alt="agri image" className="tabImage" />
+              <Image src={agriImage} alt="agri image" className="tabImage" />
             )}
-            {tab.active === "agri" && (<FeaturedCard content="This is agri test text" />)}
+            {tab.active === "agri" && (<FeaturedCard content="We work hard to grow chemical-free and hyper-local food all year round. Rapid climate change and localized food insecurity are just a few of the challenges we face today, which can be addressed in part through the use of advanced agricultural technology. Our team of technology and agri-business specialists grow our branded product, as well as assist urban and rural farmers to realize greater annual yields and improved profits." />)}
             {tab.active === "trade" && (
-              <Image src={tech} alt="tab image" className="tabImage" />
+              <Image src={tradeImage} alt="tab image" className="tabImage" />
             )}
-            {tab.active === "trade" && (<FeaturedCard content="This is trade test text" />)}
+            {tab.active === "trade" && (<FeaturedCard content="Moonbeam Trading Company is increasing its presence in the thriving import and export business. Through distributorships and setting up new import/export relationships, knowledge exchange or the introduction of new freight technologies, we are expanding our services to focus on creating mutually beneficial commercial success." />)}
             {tab.active === "ecommerce" && (
               <Image
                 src={ecomerceImage}
@@ -110,7 +113,7 @@ const Featured = () => {
               />
             )}
             {tab.active === "ecommerce" && (
-              <FeaturedCard content="This is eccomerce test text" />
+              <FeaturedCard content="Our goal is to offer our customers a positive online shopping experience. Our sales and digital marketing team working with our ecommerce and drop shipping partners will allow us to enhance your shopping experience while growing our international ecommerce business to provide increased value and savings to all of our customers." />
             )}
             </div>
           </Box>

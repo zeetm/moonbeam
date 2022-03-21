@@ -19,8 +19,8 @@ export default FeaturedCard;
 const styles = {
   featuredCard: {
     color: "white",
-    backgroundColor: 'green',
-    fontSize: "18px",
+    backgroundColor: '#0d79be',
+    fontSize: "20px",
     fontFamily: "DM Sans",
     width: "100%",
     borderRadius: "20px",
