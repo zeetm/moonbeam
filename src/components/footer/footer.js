@@ -12,8 +12,7 @@ import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import logo from "../../assets/moonbeamlogo.svg";
 import menuItems from "./footer.data";
 import { Link as ScrollLink } from "react-scroll";
-import MobileDrawer from "../header/mobileDrawer";
-
+import MobileDrawer from "./mobileDrawer";
 
 
 

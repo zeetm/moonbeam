@@ -12,7 +12,7 @@ const JackpotCard = ({ image, heading, text, link }) => {
         <Heading as="h3">{heading}</Heading>
         <Text as="p">{text}</Text>.
       </Box>
-      <a href={link}>
+      <a href={link} target="_blank">
         <button className={classes.button}>Shop Now</button>
       </a>
     </Box>
