@@ -1,27 +1,88 @@
-import React from 'react';
+import { withTheme } from '@emotion/react';
+import React, { useState } from 'react';
+import classes from './subscribe.module.css'
 import { Button, Input, Box, Container, Heading, Text } from 'theme-ui';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
+
 
 const Subscribe = () => {
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true)
+
+    console.log(name, message, email)
+
+    fetch("https://formsubmit.co/ajax/itsjoshuahaughton@gmail.com", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          name,
+          email,
+          message
+      })
+  })
+      .then(response => response.json())
+      .then(data => {
+        setEmail('')
+        setMessage('')
+        setName('')
+        setLoading(false)
+        setSent(true)
+        setTimeout(() => {
+          setSent(false)
+        }, 15000)
+        console.log(data)
+      })
+      .catch(error => console.log(error));
+
+  }
   return (
-    <Box as="section" sx={styles.subscribe}>
+    <Box as="section" sx={styles.subscribe} className={classes.wrapper}>
       <Container>
-        <Heading as="h3">Subscribe to get notified about event</Heading>
-        <Text as="p">
-          By subscribing with your mail, you will accept our privacy policy
+        <Heading as="h3">Contact Us!</Heading>
+        <Text as="p" className={classes.white}>
+          Any questions or inquiries? Contact us to get more information!
         </Text>
-        <Box as="form" sx={styles.form}>
+        <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'f0bd54af4aac2e7120db31df45f361af'}>
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
-            Email
+            Send Us an Email
           </Box>
-          <Input
-            placeholder="Enter your email"
-            type="email"
-            id="subscribeEmail"
+          <input
+            placeholder="Name"
+            type="text"
+            id="name"
             sx={styles.input}
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+          <input
+            placeholder="Email"
+            type="email"
+            id="email"
+            sx={styles.input}
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />  <textarea
+            placeholder="Please enter a message"
+            id="message"
+            sx={styles.input}
+            value={message}
+            onChange={e => setMessage(e.target.value)}
           />
           <Button type="submit" sx={styles.button}>
-            Subscribe us
+            {!loading ? `Reach Out!` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
           </Button>
+         {sent && <div className={classes.sent}>Sent Successfully!<FontAwesomeIcon icon={faCheck} /></div>}
         </Box>
       </Container>
     </Box>
@@ -46,7 +107,6 @@ const styles = {
     },
     p: {
       fontSize: ['16px'],
-      color: '#fff',
       opacity: '.6',
       letterSpacing: ['-0.5px'],
       textAlign: 'center',
@@ -56,19 +116,19 @@ const styles = {
     },
   },
   form: {
-    width: ['100%'],
-    maxWidth: ['555px'],
     mx: ['auto'],
     display: ['flex'],
     flexDirection: ['column'],
     justifyContent: ['space-between'],
     alignItems: ['center'],
     flexWrap: ['wrap'],
-    mt: ['30px', null, null, null, '60px'],
+    mt: ['30px', null, null, null, ',60px'],
+    backgroundColor: 'white',
+    borderRadius: '8px'
   },
   input: {
     width: ['100%'],
-    maxWidth: ['100%', null, '370px', '380px'],
+    maxWidth: ['80%', '80%', '80%', '80%'],
     borderRadius: '5px',
     border: 'none',
     backgroundColor: 'rgba(255,255,255, .08)',
@@ -76,25 +136,27 @@ const styles = {
     color: 'rgba(255,255,255, .8)',
     fontSize: '16px',
     pl: ['0px', null, null, '30px'],
+    mt: ['8px', null, null, '8px'],
     height: ['50px', null, null, '60px'],
     mr: ['0px', null, null, '15px'],
     textAlign: ['center', null, null, 'left'],
   },
   button: {
-    backgroundColor: '#fff',
+    backgroundColor: '#0c79be',
     borderRadius: '5px',
     fontWeight: '500',
     fontSize: ['18px'],
+    maxWidth: '80%',
     color: '#020718',
     letterSpacing: '-0.5px',
     outline: 'none',
     padding: ['0px 30.75px'],
     minHeight: ['50px', null, null, '60px'],
     width: ['100%', null, null, 'auto'],
-    mt: ['10px', null, null, '0'],
+    mt: '24px',
     mx: ['auto', null, null, '0'],
     '&:hover': {
-      backgroundColor: '#fff',
+      backgroundColor: '#86a28c',
       opacity: '0.8',
     },
   },
