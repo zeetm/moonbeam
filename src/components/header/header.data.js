@@ -9,7 +9,7 @@ export default [
   },
   {
     path: "products-and-partnerships",
-    label: "Products and Partnerships"
+    label: "Products & Partnerships"
   },
   {
     path: "online-store",

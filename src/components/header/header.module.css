@@ -6,6 +6,10 @@
   background-color: #fff;
 }
 
+.nav > div > nav {
+  width: 75%;
+}
+
 .nav > div > nav > a {
   font-weight: 500;
   font-size: 18px;
@@ -13,6 +17,8 @@
   cursor: pointer;
   transition: all 300ms ease;
   margin: 0 24px;
+  text-align: center;
+  max-width: 20%;
 }
 
 .nav > div > nav > a:hover {

@@ -21,7 +21,7 @@ const HeaderSeperate = ({ className }) => {
           <Flex as="nav" sx={styles.nav}>
           <Link path="/" label="Home"></Link>
           <Link path="/#services" label="Services"><a id="services">Services</a></Link>
-          <Link path="/#products-and-partnerships" label="Products and Partnerships"></Link>
+          <Link path="/#products-and-partnerships" label="Products & Partnerships"></Link>
           <Link path="/#online-store" label="Online Store"></Link>
           <Link path="/#mission-vision" label="Mission/Vision"></Link>
           </Flex>
