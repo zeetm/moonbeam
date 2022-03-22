@@ -26,7 +26,7 @@ export default function Header({ className }) {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1000}
                 key={i}
               >
                 {label}

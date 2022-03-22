@@ -5,18 +5,24 @@
 .links > a {
   font-size: 18px !important;
   cursor: pointer;
+  transition: all 400ms ease;
+  margin: 0 8px;
 }
 
 .links > a:hover {
   color: #13592a;
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .footer {
+  height: 90px !important;
+  position: relative;
 }
 
 .image {
-  height: 50%;
-  width: 50%;
+  height: 80%;
+  /* width: 50%; */
   margin-bottom: 24px;
   border-radius: 8px;
 }

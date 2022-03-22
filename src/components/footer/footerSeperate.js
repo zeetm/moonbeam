@@ -16,14 +16,14 @@ import MobileDrawer from "./mobileDrawer";
 
 const FooterSeperate = () => {
   return (
-    <DrawerProvider>
-      <header sx={styles.header} className={classes.nav}>
-        <Container sx={styles.container}>
-          <Image src={logo} width="100px" marginLeft="40px"/>
+    <DrawerProvider className={classes.footer}>
+      <footer sx={styles.header} className={classes.footer}>
+        <Container sx={styles.container} className={classes.footer}>
+          <Image src={logo} width="100px" marginLeft="40px" className={classes.image}/>
           Copyright by {new Date().getFullYear()} Moonbeam Inc
-          <Flex as="nav" sx={styles.nav}>
+          <Flex as="nav" sx={styles.nav} className={classes.links}>
             <Link path="/" label="Stay Connected"/>
-            <Link path="/" label="Contact Us"/>
+            <Link path="/#contact" label="Contact Us"/>
             <Link path="/" label="Employment"/>
             <Link path="/" label="Indigenous Acknowledgement"/>
             <Link path="terms" label="Terms and Conditions"/>
@@ -40,7 +40,7 @@ const FooterSeperate = () => {
 
           <MobileDrawer />
         </Container>
-      </header>
+      </footer>
     </DrawerProvider>
   )
 }

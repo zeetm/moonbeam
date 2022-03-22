@@ -40,7 +40,7 @@ const masonryOptions = {
 
 const Blogs = () => {
   return (
-    <Box as="section" id="news" sx={styles.blogs}>
+    <Box as="section" id="mission-vision" sx={styles.blogs}>
       <Container className={classes.container}>
         <BlockTitle
           title="Mission/Vision"

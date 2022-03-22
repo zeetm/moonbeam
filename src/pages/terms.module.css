@@ -1,0 +1,21 @@
+.body {
+  max-height: calc(100vh - 230px);
+  min-height: calc(100vh - 230px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.body > h1 {
+  font-size: 60px;
+  color: #0c79be;
+}
+
+.body > p {
+  width: 75%;
+  max-width: 640px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+}

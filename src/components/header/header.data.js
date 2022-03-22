@@ -8,7 +8,7 @@ export default [
     label: "Services"
   },
   {
-    path: "pricing",
+    path: "products-and-partnerships",
     label: "Products and Partnerships"
   },
   {
@@ -16,7 +16,7 @@ export default [
     label: "Online Store"
   },
   {
-    path: "news",
+    path: "mission-vision",
     label: "Mission/Vision"
   }
 ];

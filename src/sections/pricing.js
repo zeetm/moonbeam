@@ -137,8 +137,8 @@ const Pricing = () => {
     }
   };
   return (
-    <Box as="section" id="pricing" sx={styles.pricing}>
-      <Container>
+    <Box as="section" sx={styles.pricing}>
+      <Container id="products-and-partnerships">
         <BlockTitle title="Our Products and Partnerships" text="" />
         <Box sx={styles.btnWrap}>
           <Button

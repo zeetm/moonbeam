@@ -4,7 +4,7 @@ export default [
     label: "Stay Connected"
   },
   {
-    path: "services",
+    path: "contact",
     label: "Contact Us"
   },
   {

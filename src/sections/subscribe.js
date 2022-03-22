@@ -47,7 +47,7 @@ const Subscribe = () => {
 
   }
   return (
-    <Box as="section" sx={styles.subscribe} className={classes.wrapper}>
+    <Box as="section" sx={styles.subscribe} className={classes.wrapper} id='contact'>
       <Container>
         <Heading as="h3">Contact Us!</Heading>
         <Text as="p" className={classes.white}>
