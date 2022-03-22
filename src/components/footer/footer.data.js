@@ -8,20 +8,8 @@ export default [
     label: "Contact Us"
   },
   {
-    path: "pricing",
-    label: "Privacy Policy"
-  },
-  {
     path: "employment",
     label: "Employment"
-  },
-  {
-    path: "news",
-    label: "Terms and Conditions"
-  },
-  {
-    path: "news",
-    label: "Mission/Vision"
   },
   {
     path: "news",
