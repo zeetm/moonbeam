@@ -1,46 +1,29 @@
-
-import { css } from '@emotion/react';
-import MoonbeamLogo from '../../assets/mb-logo.png'
-import classes from './footer.module.css'
-import React from 'react';
-import { Box, Text, Container, Flex, jsx } from 'theme-ui';
-import { Link } from 'components/link';
-import Logo from 'components/logo';
-import logoLight from 'assets/logo-light.svg';
-import Image from "components/image";
-import { DrawerProvider } from "contexts/drawer/drawer.provider";
-import logo from "../../assets/moonbeamlogo.svg";
-import menuItems from "./footer.data";
+import React from 'react'
+import { Container, Flex, jsx } from "theme-ui";
+import { Link } from "components/link";
 import { Link as ScrollLink } from "react-scroll";
+import Logo from "components/logo";
+import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobileDrawer";
+// import menuItems from "./header.data";
+import logoDark from "assets/logo-dark.svg";
+import classes from "./header.module.css";
+import logo from "../../assets/moonbeamlogo.svg";
+import Image from "components/image";
 
-
-
-export default function Footer() {
-
+const HeaderSeperate = ({ className }) => {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={classes.nav}>
         <Container sx={styles.container}>
-          <Image src={logo} width="100px" marginLeft="40px"/>
-          Copyright by {new Date().getFullYear()} Moonbeam Inc
+          <Image src={logo} width="100px" />
+          
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                sx={styles.nav.navLink}
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
-            <Link path="terms" label="Terms and Conditions"/>
-            <Link path="privacy" label="Privacy Policy"/>
+          <Link path="/" label="Home"></Link>
+          <Link path="/" label="Services"><a id="services">Services</a></Link>
+          <Link path="/" label="Products and Partnerships"></Link>
+          <Link path="/" label="Online Store"></Link>
+          <Link path="/" label="Mission/Vision"></Link>
           </Flex>
 
           <Link
@@ -55,8 +38,10 @@ export default function Footer() {
         </Container>
       </header>
     </DrawerProvider>
-  );
+  )
 }
+
+export default HeaderSeperate
 
 const styles = {
   headerBtn: {
@@ -81,7 +66,6 @@ const styles = {
   header: {
     color: "text_white",
     fontWeight: "normal",
-    fontFamily: "DM Sans",
     py: "25px",
     width: "100%",
     position: "fixed",
@@ -101,14 +85,14 @@ const styles = {
     }
   },
   container: {
-    fontFamily: "DM Sans",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-evenly",
     width: [null, null, null, null, null, null, "1390px"],
     "@media screen and (max-width: 960px)": {
       justifyContent: "space-between"
-    }
+    },
+    fontFamily: "DM Sans"
   },
   nav: {
     mx: "auto",

@@ -1,4 +1,3 @@
-
 import { css } from '@emotion/react';
 import MoonbeamLogo from '../../assets/mb-logo.png'
 import classes from './footer.module.css'
@@ -15,9 +14,7 @@ import { Link as ScrollLink } from "react-scroll";
 import MobileDrawer from "./mobileDrawer";
 
 
-
-export default function Footer() {
-
+const FooterSeperate = () => {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={classes.nav}>
@@ -25,20 +22,10 @@ export default function Footer() {
           <Image src={logo} width="100px" marginLeft="40px"/>
           Copyright by {new Date().getFullYear()} Moonbeam Inc
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                sx={styles.nav.navLink}
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
+            <Link path="/" label="Stay Connected"/>
+            <Link path="/" label="Contact Us"/>
+            <Link path="/" label="Employment"/>
+            <Link path="/" label="Indigenous Acknowledgement"/>
             <Link path="terms" label="Terms and Conditions"/>
             <Link path="privacy" label="Privacy Policy"/>
           </Flex>
@@ -55,8 +42,10 @@ export default function Footer() {
         </Container>
       </header>
     </DrawerProvider>
-  );
+  )
 }
+
+export default FooterSeperate
 
 const styles = {
   headerBtn: {
