@@ -10,6 +10,7 @@ import testimonialsImage3 from 'assets/testimonial-1-3.png';
 import testimonialsImage4 from 'assets/testimonial-1-4.png';
 import testimonialsImage5 from 'assets/testimonial-1-5.png';
 import testimonialsImage6 from 'assets/testimonial-1-6.png';
+import classes from './testimonials.module.css'
 
 SwiperCore.use([Autoplay]);
 
@@ -23,7 +24,7 @@ const TESTIMONIALS_DATA = [
   ],
   [
     {
-      image: testimonialsImage3,
+      image: testimonialsImage4,
       text:
         'I would just like to compliment Estelle Pestana. She has been most professional and gone to great lengths to assist me. Her patience with me as I continuously changed my plans is to be commended. Her service re-affirms why I always choose to book through an agency instead of directly. Thank you',
     }
@@ -32,11 +33,11 @@ const TESTIMONIALS_DATA = [
 
 const Testimonials = () => {
   const testimonialCarousel = {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 0,
+    loop: false,
     speed: 1000,
-    centeredSlides: true,
+    centeredSlides: false,
     autoHeight: true,
     autoplay: {
       waitForTransition: false,
@@ -52,7 +53,7 @@ const Testimonials = () => {
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       1200: {
@@ -62,26 +63,30 @@ const Testimonials = () => {
     },
   };
   return (
-    <Box as="section" id="testimonials" sx={styles.testimonials}>
-      <BlockTitle
-        title="Indigenous and African Diaspora Acknowledgement"
-      />
-      <Swiper {...testimonialCarousel}>
-        {TESTIMONIALS_DATA.map((item, index) => (
-          <SwiperSlide key={index}>
-            {item.map(({ image, text, name, username }, _index) => (
-              <TestimonialsCard
-                image={image}
-                text={text}
-                name={name}
-                key={_index}
-                username={username}
-              />
+    <div className={classes.testimonialsWrapper}>
+      <Box as="section" id="testimonials" sx={styles.testimonials} className={classes.testimonials}>
+        <BlockTitle
+          title="Indigenous and African Diaspora Acknowledgement"
+        />
+        <div className={classes.swipeWrapper}>
+          <Swiper {...testimonialCarousel} className={classes.swipe}>
+            {TESTIMONIALS_DATA.map((item, index) => (
+              <SwiperSlide key={index}>
+                {item.map(({ image, text, name, username }, _index) => (
+                  <TestimonialsCard
+                    image={image}
+                    text={text}
+                    name={name}
+                    key={_index}
+                    username={username}
+                  />
+                ))}
+              </SwiperSlide>
             ))}
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </Box>
+          </Swiper>
+        </div>
+      </Box>
+    </div>
   );
 };
 

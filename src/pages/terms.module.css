@@ -1,5 +1,5 @@
 .body {
-  max-height: calc(100vh - 230px);
+  /* max-height: calc(100vh - 230px); */
   min-height: calc(100vh - 230px);
   display: flex;
   flex-direction: column;
@@ -7,15 +7,38 @@
   padding-top: 48px;
 }
 
-.body > h1 {
+.container > h1 {
   font-size: 60px;
   color: #0c79be;
+  text-align: center;
 }
 
-.body > p {
+.container > p {
   width: 75%;
   max-width: 640px;
   text-align: center;
   line-height: 1.5;
   font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pleaseRead {
+  background-color: #f7f7f7;
+  padding: 32px 0;
+}
+
+.pleaseRead > h1 {
+  text-align: center;
+}
+
+.pleaseRead > p {
+  text-align: center;
 }
