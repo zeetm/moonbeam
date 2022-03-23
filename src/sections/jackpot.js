@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container, Flex, Image, Text, Heading } from "theme-ui";
 import JackpotCard from "components/cards/jackpot-card";
 import jackpotImage from "assets/jackpot.png";
+import auctionImage from "assets/auction.png";
 import jackpotImage1 from "assets/jackpot-1-1.png";
 import jackpotImage2 from "assets/jackpot-1-2.png";
 import classes from "./jackpot.module.css";
@@ -15,7 +16,7 @@ const JACKPOT_DATA = [
   },
   {
     image: jackpotImage2,
-    text: "Get your favourite products a great price",
+    text: "Bid on great products and items",
     heading: "Online Auction",
     link: "https://www.storeys.ca/"
   }
@@ -32,12 +33,13 @@ const Jackpot = () => {
       <Container>
         <Flex sx={styles.flex} className={classes.row}>
           <Box sx={styles.image} className={classes.imgWrapper}>
-            <Image src={jackpotImage} alt="jackpot image" />
+            {/* <Image src={jackpotImage} alt="jackpot image" /> */}
+            <Image src={auctionImage} alt="jackpot image" />
           </Box>
           <Box sx={styles.content} className={classes.content}>
             <Box sx={styles.heading} className={classes.header}>
-              <Text as="span">Shop Online</Text>
-              <Heading as="h3">Visit our online store</Heading>
+              <Text as="h1">Shop Online</Text>
+              <Heading as="h3">Visit Our Online Store And  Auction</Heading>
             </Box>
             <Box sx={styles.jackpotCardBox} className={classes.features}>
               {JACKPOT_DATA.map(({ image, heading, text, link }, index) => (
@@ -74,7 +76,8 @@ const styles = {
     }
   },
   content: {
-    flex: ["0 0 100%", null, null, null, null, "0 0 37.5%"]
+    flex: ["0 0 100%", null, null, null, null, "0 0 37.5%"],
+    fontFamily: "DM Sans"
   },
   heading: {
     mb: "30px",
@@ -97,11 +100,13 @@ const styles = {
       maxWidth: ["100%", null, null, null, null, "90%", "100%"],
       fontWeight: 700,
       letterSpacing: "-1.5px",
-      lineHeight: 1.36
+      lineHeight: 1.36,
+      fontFamily: "DM Sans"
     }
   },
   jackpotCardBox: {
     display: ["grid", null, null, null, null, "block"],
-    gridTemplateColumns: ["1fr", null, null, "1fr 1fr"]
+    gridTemplateColumns: ["1fr", null, null, "1fr 1fr"],
+    
   }
 };

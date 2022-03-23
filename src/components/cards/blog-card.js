@@ -18,7 +18,7 @@ const BlogCard = ({ image, title, description, path, linkLabel }) => {
         </Box>
       )}
 
-      <Box sx={styles.content} className="blogContent">
+      <Box sx={styles.content} >
         <Heading as="h3">
           <Link path={path}>{title}</Link>
         </Heading>
@@ -93,7 +93,7 @@ const styles = {
   content: {
     h3: {
       fontSize: '18px',
-      color: '#0F2137',
+      color: '#000000',
       lineHeight: 1.67,
       fontWeight: 700,
       mt: '20px',
@@ -101,11 +101,12 @@ const styles = {
       a: {
         color: 'inherit',
       },
+      fontFamily: "DM Sans"
     },
     p: {
       fontSize: '16px',
       lineHeight: 1.87,
-      color: '#0F2137',
+      color: 'black',
       opacity: 0.6,
       mb: '15px',
     },

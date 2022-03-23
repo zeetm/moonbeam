@@ -32,6 +32,7 @@
   width: 100%;
   margin-bottom: 8px !important;
   /* flex-wrap: wrap; */
+  font-family: 'DM Sans';
 }
 
 .content > a {

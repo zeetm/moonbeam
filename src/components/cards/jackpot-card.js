@@ -10,7 +10,7 @@ const JackpotCard = ({ image, heading, text, link }) => {
       </Box>
       <Box sx={styles.content} className={classes.contentText}>
         <Heading as="h3">{heading}</Heading>
-        <Text as="p">{text}</Text>.
+        <Text as="p">{text}</Text>
       </Box>
       <a href={link} target="_blank">
         <button className={classes.button}>Shop Now</button>
@@ -46,7 +46,8 @@ const styles = {
       fontSize: "18px",
       lineHeight: 1,
       fontWeight: 700,
-      mb: "10px"
+      mb: "10px",
+      fontFamily: "DM Sans"
     },
     p: {
       fontSize: "15px",
