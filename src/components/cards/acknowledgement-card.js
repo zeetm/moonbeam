@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
-import indigenousImage from '../../assets/indigenous.png'
+import afroImage from '../../assets/afro-indig.png'
 
-const TestimonialsCard = () => {
+const AcknowledgementCard = () => {
   return (
     <Box sx={styles.testimonialsCard}>
       <Box sx={styles.testimonialsInfo}>
@@ -13,25 +13,23 @@ const TestimonialsCard = () => {
           {/* <Heading as="h3">{name}</Heading>
           <Text as="p">{username}</Text> */}
         </Box>
-          <Text as="p">Moonbeam Trading Company would like to acknowledge the 
-          fact that the land on which we gather, and operate our business, is part 
-          of the Treaty Lands and Territory of the Mississaugas of the Credit. For thousands of years, 
-          Indigenous peoples inhabited and cared for this land. In particular we acknowledge the territory of 
-          the Anishinabek, Huron-Wendat, Haudenosaunee and Ojibway/Chippewa peoples; the land that is home
-           to the Metis; and most recently, the territory of the Mississaugas of the Credit First Nation 
-           who are direct descendants of the Mississaugas of the Credit. We are grateful to have the opportunity 
-           to work on this land, and by doing so, give our respect to its first inhabitants
-           </Text>
+          <Text as="p">Moonbeam Trading Company would like to acknowledge the African Diaspora, its elders, 
+          their descendants and the lands upon which they live. For thousands of years African Indigenous
+           peoples inhabited and cared for the land with a spiritual and cultural connection to the earth. 
+           In particular we acknowledge the continuing efforts to reconnect and reclaim African Indigenous ways 
+           of being and doing. We are grateful for the opportunity and responsibility to embrace our heritage,
+            and by doing so, give our respect to the ancestors.
+          </Text>
       </Box>
     </Box>
   );
 };
 
-export default TestimonialsCard;
+export default AcknowledgementCard;
 
 const styles = {
   testimonialsCard: {
-    backgroundImage: `url(${indigenousImage})`,
+    backgroundImage: `url(${afroImage})`,
     backgroundColor: '#FFFFFF',
     borderRadius: '5px',
     mb: '20px',
