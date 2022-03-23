@@ -14,6 +14,7 @@ import Testimonials from "sections/testimonials";
 import Blogs from "sections/blogs";
 import Subscribe from "sections/subscribe";
 import Employment from "sections/employment";
+import StayConnected from "../sections/stay-connected";
 
 export default function IndexPage() {
   return (
@@ -25,6 +26,7 @@ export default function IndexPage() {
           <Services />
           <Jackpot />
           {/* <CallToAction /> */}
+          <StayConnected />
           <Featured />
           <Pricing />
           <Testimonials />
