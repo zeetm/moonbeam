@@ -1,18 +1,12 @@
 import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
 import afroImage from '../../assets/afro-indig.png'
+import classes from './acknowledgement-card.module.css';
 
 const AcknowledgementCard = () => {
   return (
-    <Box sx={styles.testimonialsCard}>
-      <Box sx={styles.testimonialsInfo}>
-        {/* <Box sx={styles.testimonialsImage}>
-          <Image src={image} alt={name} />
-        </Box> */}
-        <Box sx={styles.testimonialsContent}>
-          {/* <Heading as="h3">{name}</Heading>
-          <Text as="p">{username}</Text> */}
-        </Box>
+    <Box sx={styles.acknowledgementCard} className={classes.bgImage}>
+      <Box sx={styles.acknowledgementInfo} className={classes.content}>
           <Text as="p">Moonbeam Trading Company would like to acknowledge the African Diaspora, its elders, 
           their descendants and the lands upon which they live. For thousands of years African Indigenous
            peoples inhabited and cared for the land with a spiritual and cultural connection to the earth. 
@@ -28,8 +22,7 @@ const AcknowledgementCard = () => {
 export default AcknowledgementCard;
 
 const styles = {
-  testimonialsCard: {
-    backgroundImage: `url(${afroImage})`,
+  acknowledgementCard: {
     backgroundColor: '#FFFFFF',
     borderRadius: '5px',
     mb: '20px',
@@ -44,28 +37,32 @@ const styles = {
     height: '600px',
     width: '1000px'
   },
-  testimonialsInfo: {
+  acknowledgementInfo: {
     display: 'flex',
     alignItems: 'center',
-    mt: '140px',
+    // mt: '140px',
     backgroundColor: '#FFFFFF',
     opacity: '0.7',
     fontFamily: "DM Sans",
-    width: '90%',
-    height: '40%',
+    width: 'auto',
+    height: 'auto',
     color: '#000000',
     "&:hover": {
       opacity: '0.9'
-    }
+    },
+    pt: '20px',
+    pb: '20px',
+    pl: '10px',
+    pr: '10px'
   },
-  testimonialsImage: {
+  acknowledgementImage: {
     img: {
       display: 'block',
       mr: '15px',
     },
     zIndex: '0'
   },
-  testimonialsContent: {
+  acknowledgementContent: {
     h3: {
       m: 0,
       color: '#343D48',

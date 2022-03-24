@@ -11,9 +11,9 @@ SwiperCore.use([Autoplay]);
 
 const Testimonials = () => {
   const testimonialCarousel = {
-    slidesPerView: 2,
+    slidesPerView: 'auto',
     spaceBetween: 0,
-    loop: false,
+    loop: true,
     speed: 1000,
     centeredSlides: false,
     autoHeight: true,
@@ -41,7 +41,7 @@ const Testimonials = () => {
     },
   };
   return (
-    <Box as="section" id="testimonials" sx={styles.testimonials}>
+    <Box as="section" id="testimonials" sx={styles.testi}>
       <BlockTitle
         title="Indigenous and African Diaspora Acknowledgement"
       />
@@ -60,7 +60,7 @@ const Testimonials = () => {
 export default Testimonials;
 
 const styles = {
-  testimonials: {
+  testi: {
     backgroundColor: '#F4F4F6',
     pt: ['20px', null, null, null, '80px', null, '100px'],
     pb: ['60px', null, null, null, '80px', null, '120px'],
