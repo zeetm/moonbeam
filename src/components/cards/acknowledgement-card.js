@@ -51,7 +51,9 @@ const styles = {
       opacity: '0.9'
     },
     pt: '20px',
-    pb: '20px'
+    pb: '20px',
+    pl: '10px',
+    pr: '10px'
   },
   acknowledgementImage: {
     img: {
