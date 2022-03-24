@@ -1,18 +1,13 @@
 import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
 import indigenousImage from '../../assets/indigenous.png'
+import classes from './testimonial-card.module.css';
+
 
 const TestimonialsCard = () => {
   return (
-    <Box sx={styles.testimonialsCard}>
-      <Box sx={styles.testimonialsInfo}>
-        {/* <Box sx={styles.testimonialsImage}>
-          <Image src={image} alt={name} />
-        </Box> */}
-        <Box sx={styles.testimonialsContent}>
-          {/* <Heading as="h3">{name}</Heading>
-          <Text as="p">{username}</Text> */}
-        </Box>
+    <Box sx={styles.testimonialsCard} className={classes.bgImage}>
+      <Box sx={styles.testimonialsInfo} className={classes.content}>
           <Text as="p">Moonbeam Trading Company would like to acknowledge the 
           fact that the land on which we gather, and operate our business, is part 
           of the Treaty Lands and Territory of the Mississaugas of the Credit. For thousands of years, 
@@ -31,7 +26,6 @@ export default TestimonialsCard;
 
 const styles = {
   testimonialsCard: {
-    backgroundImage: `url(${indigenousImage})`,
     backgroundColor: '#FFFFFF',
     borderRadius: '5px',
     mb: '20px',
@@ -44,21 +38,23 @@ const styles = {
       color: '#343D48',
     },
     height: '600px',
-    width: '1000px'
+    width: '1200px'
   },
   testimonialsInfo: {
     display: 'flex',
     alignItems: 'center',
-    mt: '140px',
+    // mt: '140px',
     backgroundColor: '#FFFFFF',
     opacity: '0.7',
     fontFamily: "DM Sans",
-    width: '90%',
-    height: '40%',
+    width: 'auto',
+    height: 'auto',
     color: '#000000',
     "&:hover": {
       opacity: '0.9'
-    }
+    },
+    pt: '20px',
+    pb: '20px'
   },
   testimonialsImage: {
     img: {

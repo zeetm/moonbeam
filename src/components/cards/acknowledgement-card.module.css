@@ -1,0 +1,12 @@
+.bgImage {
+  background-image: url(../../assets/afro-indig.png);
+  max-width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  
+}
+
+.content {
+  max-width: 100%;
+  height: auto;
+}
