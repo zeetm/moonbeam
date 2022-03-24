@@ -4,8 +4,6 @@ import classes from './footer.module.css'
 import React from 'react';
 import { Box, Text, Container, Flex, jsx } from 'theme-ui';
 import { Link } from 'components/link';
-import Logo from 'components/logo';
-import logoLight from 'assets/logo-light.svg';
 import Image from "components/image";
 import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import logo from "../../assets/moonbeamlogo.svg";
@@ -22,10 +20,10 @@ const FooterSeperate = () => {
           <Image src={logo} width="100px" marginLeft="40px" className={classes.image}/>
           Copyright by {new Date().getFullYear()} Moonbeam Inc
           <Flex as="nav" sx={styles.nav} className={classes.links}>
-            <Link path="/" label="Stay Connected"/>
+            <Link path="/#connected" label="Stay Connected"/>
             <Link path="/#contact" label="Contact Us"/>
-            <Link path="/" label="Employment"/>
-            <Link path="/" label="Indigenous Acknowledgement"/>
+            <Link path="/#employment" label="Employment"/>
+            <Link path="/#testimonials" label="Indigenous Acknowledgement"/>
             <Link path="terms" label="Terms and Conditions"/>
             <Link path="privacy" label="Privacy Policy"/>
           </Flex>

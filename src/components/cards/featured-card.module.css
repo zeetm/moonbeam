@@ -1,8 +1,8 @@
 .cardWrapper {
   position: absolute;
-  top: 0;
-  right: 10px;
-  width: 30%;
+  top: 10;
+  right: 400px;
+  width: 40%;
   border: none;
 }
 

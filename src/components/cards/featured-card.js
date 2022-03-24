@@ -18,8 +18,11 @@ export default FeaturedCard;
 
 const styles = {
   featuredCard: {
+    // position: 'relative',
+    // top: 100,
+    // right: 100,
     color: "white",
-    backgroundColor: '#0d79be',
+    backgroundColor: '#13592a',
     fontSize: "20px",
     fontFamily: "DM Sans",
     width: "100%",

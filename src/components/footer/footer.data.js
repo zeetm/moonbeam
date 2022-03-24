@@ -1,6 +1,10 @@
 export default [
   {
     path: "banner",
+    label: "Back to top"
+  },
+  {
+    path: "connected",
     label: "Stay Connected"
   },
   {
@@ -12,7 +16,7 @@ export default [
     label: "Employment"
   },
   {
-    path: "news",
+    path: "testimonials",
     label: "Indigenous Acknowledgement"
   }
 ];

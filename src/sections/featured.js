@@ -5,7 +5,6 @@ import BlockTitle from "components/block-title";
 import Image from "components/image";
 import { AiFillUsb, AiOutlineSwap } from "react-icons/ai";
 import { FaCarrot, FaShoppingCart } from "react-icons/fa";
-import dotPattern from "assets/dot-pattern.svg";
 import tech from "assets/tech.png";
 import ecomerceImage from "assets/ecommerce.png";
 import agriImage from "assets/agriFood.png";
@@ -207,7 +206,6 @@ const styles = {
       content: "''",
       width: "302px",
       height: "347px",
-      backgroundImage: `url(${dotPattern})`,
       position: "absolute",
       bottom: "-30px",
       right: "-40px",

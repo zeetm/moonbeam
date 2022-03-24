@@ -3,8 +3,6 @@ import { keyframes } from "@emotion/core";
 import { Box, Container, Grid, Button, Text } from "theme-ui";
 import BlockTitle from "components/block-title";
 import PriceCard from "components/cards/price-card";
-import priceIcon1 from "assets/price-user-1-1.svg";
-import priceIcon2 from "assets/price-user-1-2.svg";
 import fairTrade from "assets/ft.png";
 import boxes from "assets/boxes.svg";
 import handShake from "assets/hand-shake.svg";
@@ -83,35 +81,6 @@ const PRICE_YEARLY_DATA = [
       }
     ]
   }
-  // {
-  //   recommended: "Recommended",
-  //   title: "For Organization pack",
-  //   icon: priceIcon2,
-  //   amount: "199.99/yr",
-  //   options: [
-  //     {
-  //       status: true,
-  //       label: "Ultimate access to all course, exercises and assessments"
-  //     },
-  //     {
-  //       status: true,
-  //       label:
-  //         "Free access for all kind of exercise corrections with downloads."
-  //     },
-  //     {
-  //       status: true,
-  //       label: "Total assessment corrections with free download access system"
-  //     },
-  //     {
-  //       status: true,
-  //       label: "Unlimited download of courses on the mobile app contents"
-  //     },
-  //     {
-  //       status: true,
-  //       label: "Download and print courses and exercises in PDF"
-  //     }
-  //   ]
-  // }
 ];
 
 const Pricing = () => {
