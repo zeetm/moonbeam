@@ -21,8 +21,19 @@
   font-size: 18px;
 }
 
+.container > div > p,
+.container > div > div > p,
+.accountCard > ul > li {
+  font-family: sans-serif;
+  max-width: 80%;
+  justify-self: center; 
+  margin: 0 auto;
+  line-height: 1.45;
+}
+
+
 .container {
-  width: 80%;
+  width: 65%;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
@@ -31,7 +42,7 @@
 }
 
 .pleaseRead {
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
   padding: 32px 0;
 }
 
@@ -41,4 +52,242 @@
 
 .pleaseRead > p {
   text-align: center;
+}
+
+.container > div {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 64px;
+  width: 100%;
+}
+
+.container > div:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.container > div:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.container > div > h1 {
+  text-align: center;
+}
+
+.threeColumn {
+  display: flex;
+  /* padding: 0 80px !important; */
+  width: calc(100% + 128px) !important;
+  /* max-width: 100%; */
+  /* padding: 0 64px !important; */
+  padding: 0 !important;
+}
+
+.threeColumn > div {
+  /* flex: calc(1/3); */
+  width: calc(100%/3);
+  margin: 0 auto;
+  /* flex-grow: inherit; */
+  /* text-align: left; */
+  padding: 50px 0;
+
+}
+
+.threeColumn > div > h1 {
+  font-size: 28px;
+}
+
+.threeColumn > div:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.threeColumn > div:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.threeColumn > div > p {
+
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 600px; */
+  width: 100%;
+  background-image: url('../assets/account.jpg');
+  background-size: cover;
+}
+
+.accountCard {
+  /* height: 80%; */
+  width: 80%;
+  max-width: 650px !important;
+  max-height: 690px !important;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 3px 0 rgb(0 0 0 / 0.2), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  padding: 16px 24px;
+  background:rgba(255, 255, 255, 0.85);
+  z-index: 100;
+}
+
+.payment > p {
+  line-height: 1.5;
+}
+
+.acceptableUseBottom {
+  display: flex;
+}
+
+.acceptableUseBottom > div {
+  flex: 0.5;
+  text-align: left;
+}
+
+.acceptableUseBottom > div > ul > li {
+  margin: 16px 0;
+}
+
+.privacyInfo {
+  line-height: 1.5;
+}
+
+.engineeringBottom {
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.engineeringBottom > div {
+  flex: 0.45;
+}
+
+.dataLoss {
+  width: 100%;
+}
+
+.threeColumnTwo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.threeColumnTwo > div {
+  width: calc(100%/3)
+}
+
+.cta {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.cta > a {
+  padding: 0 24px !important;
+  height: 50px;
+  background-color: #0c79be;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms ease;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta > a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 0.2), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+}
+
+.cta > a:active {
+  transform: scale(0.98);
+}
+
+.warning {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: space-evenly
+}
+
+.warning > div {
+  flex: 0.45;
+}
+
+.intellectualProperty {
+  height: 100%;
+}
+
+@media(max-width: 1300px) {
+  .threeColumnTwo > div > h1 {
+    font-size: 18px;
+  }
+
+  .accountCard {
+    width: auto;
+  }
+
+  .accountCard > ul > li {
+    text-align: left;
+  }
+}
+
+@media(max-width: 878px) {
+  .accountCard {
+    width: 100%;
+    max-height: none !important;
+  }
+
+  .accountCard > ul > li {
+    font-size: 12px;
+  }
+
+  .container > div > div > h1,
+  .container > div > h1
+   {
+    font-size: 24px;
+  }
+
+  .threeColumnTwo,
+  .threeColumn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .threeColumnTwo > div,
+   .threeColumn > div{
+    width: 90%;
+  }
+
+  .warning {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 555px) {
+  .container {
+    width: 95%
+  }
+
+  .container > div > div > h1,
+  .container > div > h1
+   {
+    font-size: 18px;
+  }
+
+  .engineeringBottom,
+  .acceptableUseBottom {
+    flex-direction: column;
+    list-style-type:none;
+  }
+
+  .accountCard > ul > li {
+    list-style-type:none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    text-align: center;
+  }
 }
