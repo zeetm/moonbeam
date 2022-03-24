@@ -34,11 +34,11 @@ const styles = {
     pb: ['25px', null, null, null, null, '25px', '35px'],
     p: {
       fontSize: '16px',
-      lineHeight: 1.87,
+      lineHeight: 1.5,
       color: '#343D48',
     },
     height: '600px',
-    width: '1200px'
+    width: '1000px'
   },
   testimonialsInfo: {
     display: 'flex',
@@ -54,7 +54,9 @@ const styles = {
       opacity: '0.9'
     },
     pt: '20px',
-    pb: '20px'
+    pb: '20px',
+    pl: '10px',
+    pr: '10px'
   },
   testimonialsImage: {
     img: {
