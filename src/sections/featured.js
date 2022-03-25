@@ -87,33 +87,31 @@ const Featured = () => {
           </Box>
           <Box sx={styles.tabContent}>
             <div className={classes.contentWrapper}>
-            {tab.active === "technology" && (
-              <Image src={tech} alt="tab image" className="tabImage" />
-            )}
-            {tab.active === "technology" && (
-              <FeaturedCard content="We also have a passion for using technology to address current social problems while working collaboratively to alleviate societal issues.
-                These challenges are complex and require dedication by multiple parties.
-                We take on projects that create innovative solutions to address climate change, poverty, education, healthcare, senior isolation, public safety, farming and safe drinking water."
-              />
-            )}
-            {tab.active === "agri" && (
-              <Image src={agriImage} alt="agri image" className="tabImage" />
-            )}
-            {tab.active === "agri" && (<FeaturedCard content="We work hard to grow chemical-free and hyper-local food all year round. Rapid climate change and localized food insecurity are just a few of the challenges we face today, which can be addressed in part through the use of advanced agricultural technology. Our team of technology and agri-business specialists grow our branded product, as well as assist urban and rural farmers to realize greater annual yields and improved profits." />)}
-            {tab.active === "trade" && (
-              <Image src={tradeImage} alt="tab image" className="tabImage" />
-            )}
-            {tab.active === "trade" && (<FeaturedCard content="Moonbeam Trading Company is increasing its presence in the thriving import and export business. Through distributorships and setting up new import/export relationships, knowledge exchange or the introduction of new freight technologies, we are expanding our services to focus on creating mutually beneficial commercial success." />)}
-            {tab.active === "ecommerce" && (
-              <Image
-                src={ecomerceImage}
-                alt="ecomm image"
-                className="tabImage"
-              />
-            )}
-            {tab.active === "ecommerce" && (
-              <FeaturedCard content="Our goal is to offer our customers a positive online shopping experience. Our sales and digital marketing team working with our ecommerce and drop shipping partners will allow us to enhance your shopping experience while growing our international ecommerce business to provide increased value and savings to all of our customers." />
-            )}
+              {tab.active === "technology" && (
+                <Image src={tech} alt="tab image" className="tabImage" />
+              )}
+              {tab.active === "technology" && (
+                <FeaturedCard content={"We also have a passion for using technology to address current social problems while working collaboratively to alleviate societal issues. These challenges are complex and require dedication by multiple parties.\n We take on projects that create innovative solutions to address climate change, poverty, education, healthcare, senior isolation, public safety, farming and safe drinking water."}
+                />
+              )}
+              {tab.active === "agri" && (
+                <Image src={agriImage} alt="agri image" className="tabImage" />
+              )}
+              {tab.active === "agri" && (<FeaturedCard content="We work hard to grow chemical-free and hyper-local food all year round. Rapid climate change and localized food insecurity are just a few of the challenges we face today, which can be addressed in part through the use of advanced agricultural technology. Our team of technology and agri-business specialists grow our branded product, as well as assist urban and rural farmers to realize greater annual yields and improved profits." />)}
+              {tab.active === "trade" && (
+                <Image src={tradeImage} alt="tab image" className="tabImage" />
+              )}
+              {tab.active === "trade" && (<FeaturedCard content="Moonbeam Trading Company is increasing its presence in the thriving import and export business. Through distributorships and setting up new import/export relationships, knowledge exchange or the introduction of new freight technologies, we are expanding our services to focus on creating mutually beneficial commercial success." />)}
+              {tab.active === "ecommerce" && (
+                <Image
+                  src={ecomerceImage}
+                  alt="ecomm image"
+                  className="tabImage"
+                />
+              )}
+              {tab.active === "ecommerce" && (
+                <FeaturedCard content="Our goal is to offer our customers a positive online shopping experience. Our sales and digital marketing team working with our ecommerce and drop shipping partners will allow us to enhance your shopping experience while growing our international ecommerce business to provide increased value and savings to all of our customers." />
+              )}
             </div>
           </Box>
         </Container>
@@ -134,7 +132,7 @@ const fadeIn = keyframes`
 
 const styles = {
   featured: {
-    pt: ["80px", null, null, null, "80px", null, "100px"],
+    pt: ["20px", null, null, null, "80px", null, "100px"],
     backgroundColor: "#F9FAFC"
   },
   container: {
@@ -214,7 +212,7 @@ const styles = {
     ".tabImage": {
       position: "relative",
       animation: `${fadeIn} 0.8s linear`,
-      width: '80%'
+      width: '60%'
     },
     fontFamily: "DM Sans"
   }

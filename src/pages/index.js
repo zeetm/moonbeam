@@ -24,13 +24,12 @@ export default function IndexPage() {
           <SEO title="Moonbeam Trading Company" />
           <Banner />
           <Services />
+          <Pricing />
           <Jackpot />
-          {/* <CallToAction /> */}
+          <Blogs />
           <StayConnected />
           <Featured />
-          <Pricing />
           <Testimonials />
-          <Blogs />
           <Employment/>
           <Subscribe />
         </Layout>

@@ -156,7 +156,7 @@ const fadeIn2 = keyframes`
 
 const styles = {
   pricing: {
-    pt: ["200px", null, null, null, "200px", null, "240px"],
+    pt: ["20px", null, null, null, "200px", null, "240px"],
     pb: ["80px", null, null, null, "80px", "100px", "140px"]
   },
   btnWrap: {

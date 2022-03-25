@@ -1,13 +1,13 @@
 .cardWrapper {
   position: absolute;
   top: 10;
-  right: 400px;
+  right: 450px;
   width: 40%;
   border: none;
 }
 
 .card {
-  opacity: 0.8;
+  opacity: 0.9;
   box-shadow: 0 4px 3px 0 rgb(0 0 0 / 0.2), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   transition: all 300ms ease;
 }

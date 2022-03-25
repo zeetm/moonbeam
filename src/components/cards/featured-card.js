@@ -18,15 +18,13 @@ export default FeaturedCard;
 
 const styles = {
   featuredCard: {
-    // position: 'relative',
-    // top: 100,
-    // right: 100,
-    color: "white",
-    backgroundColor: '#13592a',
+    color: "black",
+    backgroundColor: '#FFFFFF',
     fontSize: "20px",
     fontFamily: "DM Sans",
     width: "100%",
     borderRadius: "20px",
-    p: "20px"
+    p: "10px",
+    whiteSpace: "pre-line"
   }
 }
