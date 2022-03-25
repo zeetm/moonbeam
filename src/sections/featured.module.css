@@ -8,6 +8,7 @@
   text-align: center;
 }
 
+
 @media(max-width: 920px) {
   .contentWrapper {
     margin-bottom: 240px;
@@ -20,8 +21,12 @@
   }
 }
 
-@media(max-width: 435px) {
+@media(max-width: 479px) {
   .contentWrapper {
-    margin-bottom: 440px;
+    margin-bottom: 480px;
+  }
+
+  .featured {
+    margin-bottom: 200px;
   }
 }

@@ -26,4 +26,20 @@
     transform: translate(-50%, 100%);
     width: 75%
   }
+
+  .card {
+    font-size: 18px !important;
+  }
+}
+
+@media(max-width: 480px) {
+  .card {
+    font-size: 16px !important;
+  }
+}
+
+@media(max-width: 475px) { 
+  .card {
+    font-size: 13px !important;
+  }
 }

@@ -46,7 +46,7 @@ const Featured = () => {
     }
   };
   return (
-    <div id="more">
+    <div id="more" className={classes.featured}>
       <Box as="section" sx={styles.featured}>
         <Container sx={styles.container}>
           <BlockTitle
@@ -137,8 +137,7 @@ const styles = {
   },
   container: {
     position: "relative",
-    top: "150px",
-    mt: "-150px"
+    mt: "40px"
   },
   tabButtonTopWrapper: {
     overflowY: ["hidden", null, null, null, null, "inherit"],
