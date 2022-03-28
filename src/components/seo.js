@@ -2,10 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup landing descriptions',
-  author = 'RedQ, Inc',
+  description = 'We provide services that create business, customer and community value. Focusing on ecommerce, technology, agri-food as well as import and export',
   meta,
-  title = 'startup landing title',
+  title = 'Moonbeam Trading Company',
 }) {
   const metaData = [
     {
@@ -25,20 +24,12 @@ export default function SEO({
       content: `website`,
     },
     {
-      name: `twitter:card`,
-      content: `summary`,
+      property: `og:image`,
+      content: `https://imgur.com/4VMrEi4`,
     },
     {
-      name: `twitter:creator`,
-      content: author,
-    },
-    {
-      name: `twitter:title`,
-      content: title,
-    },
-    {
-      name: `twitter:description`,
-      content: description,
+      property: `og:url`,
+      content: `https://moonbeamtrading.ca/`,
     },
   ].concat(meta);
   return (
