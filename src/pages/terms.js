@@ -1,12 +1,14 @@
 import React from "react";
 import HeaderSeperate from "components/header/headerSeperate";
 import FooterSeperate from "components/footer/footerSeperate";
+import SEO from "components/seo";
 import classes from "./terms.module.css";
 import { Link } from "components/link";
 
 const terms = () => {
   return (
     <>
+      <SEO title='Terms and Conditions | Moonbeam Trading Company' description="The terms and conditions page for Moonbeam Trading Company" />
       <HeaderSeperate />
       <div className={classes.body}>
         <div className={classes.container}>
