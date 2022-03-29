@@ -2,14 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'We provide services that create business, customer and community value. Focusing on ecommerce, technology, agri-food as well as import and export',
+  // description = 'We provide services that create business, customer and community value. Focusing on ecommerce, technology, agri-food as well as import and export',
   meta,
   title = 'Moonbeam Trading Company',
 }) {
   const metaData = [
     {
       name: `description`,
-      content: description,
+      content: 'We provide services that create business, customer and community value. Focusing on ecommerce, technology, agri-food as well as import and export',
     },
     {
       property: `og:title`,
@@ -17,7 +17,7 @@ export default function SEO({
     },
     {
       property: `og:description`,
-      content: description,
+      content: 'We provide services that create business, customer and community value. Focusing on ecommerce, technology, agri-food as well as import and export',
     },
     {
       property: `og:type`,
