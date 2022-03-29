@@ -9,7 +9,7 @@ import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import logo from "../../assets/moonbeamlogo.svg";
 import menuItems from "./footer.data";
 import { Link as ScrollLink } from "react-scroll";
-import MobileDrawer from "./mobileDrawer";
+import MobileDrawerSeparate from "./mobileDrawerSeparate";
 
 
 const FooterSeperate = () => {
@@ -36,7 +36,7 @@ const FooterSeperate = () => {
             variant="buttons.primary"
           />
 
-          <MobileDrawer />
+          <MobileDrawerSeparate />
         </Container>
       </footer>
     </DrawerProvider>

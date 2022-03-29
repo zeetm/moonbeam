@@ -1,9 +1,6 @@
 import React from "react";
 import { Box, Container, Flex, Image, Text, Heading } from "theme-ui";
 import EmploymentCard from "components/cards/employment-card";
-import jackpotImage from "assets/jackpot.png";
-import jackpotImage1 from "assets/jackpot-1-1.png";
-import jackpotImage2 from "assets/jackpot-1-2.png";
 import employmentImage from "assets/employment.png"
 import applyImage from "assets/apply.png"
 import classes from "./employment.module.css";

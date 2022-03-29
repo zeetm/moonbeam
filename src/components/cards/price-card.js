@@ -4,7 +4,6 @@ import { Link } from "components/link";
 import classes from "./price-card.module.css";
 import priceCheck from "assets/price-check.svg";
 import priceCross from "assets/price-cross.svg";
-import priceArrow from "assets/price-arrow.svg";
 
 const PriceCard = ({ data: { title, icon, amount, options, recommended } }) => {
   return (

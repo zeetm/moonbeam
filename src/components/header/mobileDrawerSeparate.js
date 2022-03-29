@@ -1,16 +1,14 @@
 import React, { useContext } from 'react';
-import { Button, Box } from 'theme-ui';
+import { Box } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from 'contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
-import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'components/link';
-import menuItems from './footer.data';
 import Logo from 'components/logo';
 import mbLogo from 'assets/moonbeamMenu.png';
 
-const MobileDrawer = () => {
+const MobileDrawerSeparate = () => {
   const { state, dispatch } = useContext(DrawerContext);
 
   // Toggle drawer
@@ -38,21 +36,11 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Logo image={mbLogo} />
           <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={10}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
-            <Link path="terms" label="Terms and Conditions"/>
-            <Link path="privacy" label="Privacy Policy"/>
+            <Link path="/" label="Home"></Link>
+            <Link path="/#services" label="Services"><a id="services">Services</a></Link>
+            <Link path="/#products-and-partnerships" label="Products & Partnerships"></Link>
+            <Link path="/#online-store" label="Online Store"></Link>
+            <Link path="/#mission-vision" label="Mission/Vision"></Link>
           </Box>
         </Box>
       </Scrollbars>
@@ -139,4 +127,4 @@ const styles = {
   },
 };
 
-export default MobileDrawer;
+export default MobileDrawerSeparate;

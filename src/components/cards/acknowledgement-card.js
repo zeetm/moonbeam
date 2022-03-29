@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
-import afroImage from '../../assets/afro-indig.png'
 import classes from './acknowledgement-card.module.css';
 
 const AcknowledgementCard = () => {

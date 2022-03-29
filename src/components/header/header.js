@@ -1,11 +1,9 @@
 import { Container, Flex, jsx } from "theme-ui";
 import { Link } from "components/link";
 import { Link as ScrollLink } from "react-scroll";
-import Logo from "components/logo";
 import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobileDrawer";
 import menuItems from "./header.data";
-import logoDark from "assets/logo-dark.svg";
 import classes from "./header.module.css";
 import logo from "../../assets/moonbeamlogo.svg";
 import Image from "components/image";
