@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from "components/seo";
 import HeaderSeperate from "components/header/headerSeperate";
 import FooterSeperate from "components/footer/footerSeperate";
 import classes from './privacy.module.css';
@@ -7,6 +8,7 @@ const privacy = () => {
   return (
     <>
       <HeaderSeperate/>
+      <SEO title="Moonbeam Trading Company" />
         <div className={classes.body}>
             <h1>Privacy Policy</h1>
             <h2>LAST UPDATE OF THIS PRIVACY POLICY - March 9, 2021</h2>
