@@ -1,12 +1,9 @@
 
 import { css } from '@emotion/react';
-import MoonbeamLogo from '../../assets/mb-logo.png'
 import classes from './footer.module.css'
 import React from 'react';
 import { Box, Text, Container, Flex, jsx } from 'theme-ui';
 import { Link } from 'components/link';
-import Logo from 'components/logo';
-import logoLight from 'assets/logo-light.svg';
 import Image from "components/image";
 import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import logo from "../../assets/moonbeamlogo.svg";

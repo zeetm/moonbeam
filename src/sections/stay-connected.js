@@ -1,4 +1,3 @@
-import { withTheme } from '@emotion/react';
 import React, { useState } from 'react';
 import classes from './stay-connected.module.css'
 import { Button, Input, Box, Container, Heading, Text } from 'theme-ui';

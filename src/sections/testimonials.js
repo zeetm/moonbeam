@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import BlockTitle from 'components/block-title';
 import TestimonialsCard from 'components/cards/testimonial-card';
 import AcknowledgementCard from 'components/cards/acknowledgement-card';
-import indigenousImage from 'assets/indigenous.png';
 
 SwiperCore.use([Autoplay]);
 

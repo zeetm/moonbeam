@@ -7,7 +7,6 @@ import Layout from "components/layout";
 import Banner from "sections/banner";
 import Services from "sections/services";
 import Jackpot from "sections/jackpot";
-import CallToAction from "sections/call-to-action";
 import Featured from "sections/featured";
 import Pricing from "sections/pricing";
 import Testimonials from "sections/testimonials";

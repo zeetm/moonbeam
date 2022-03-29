@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
-import indigenousImage from '../../assets/indigenous.png'
 import classes from './testimonial-card.module.css';
 
 

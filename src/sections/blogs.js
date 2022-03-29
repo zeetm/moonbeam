@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Box, Grid } from 'theme-ui';
-import Masonry from 'react-masonry-component';
 import BlockTitle from 'components/block-title';
 import BlogCard from 'components/cards/blog-card';
 import blogImage1 from 'assets/mission.jpg';
