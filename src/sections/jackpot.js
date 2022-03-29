@@ -16,9 +16,9 @@ const JACKPOT_DATA = [
   },
   {
     image: jackpotImage2,
-    text: "Bid on great products and items",
+    text: "Coming Soon! - Equipment, Surplus Inventory and Estate Auctions.",
     heading: "Online Auction",
-    link: "https://www.storeys.ca/"
+    link: "Subscribe at Auctions@moonbeamtrading.ca"
   }
 ];
 
@@ -52,6 +52,7 @@ const Jackpot = () => {
                 />
               ))}
             </Box>
+            <Text as="h1">Subscribe at Auctions@moonbeamtrading.ca</Text>
           </Box>
         </Flex>
       </Container>

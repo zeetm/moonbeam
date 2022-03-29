@@ -8,7 +8,7 @@ const privacy = () => {
   return (
     <>
       <HeaderSeperate/>
-      <SEO title="Moonbeam Trading Company" />
+      <SEO title="Moonbeam Trading Company's Privacy Policy" />
         <div className={classes.body}>
             <h1>Privacy Policy</h1>
             <h2>LAST UPDATE OF THIS PRIVACY POLICY - March 9, 2021</h2>
