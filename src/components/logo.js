@@ -1,6 +1,4 @@
 
-import { css, jsx } from '@emotion/react';
-
 import { Image } from 'theme-ui';
 import { Link } from 'components/link';
 

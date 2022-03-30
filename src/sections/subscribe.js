@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './subscribe.module.css'
-import { Button, Input, Box, Container, Heading, Text } from 'theme-ui';
+import { Button, Box, Container, Heading, Text } from 'theme-ui';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
 

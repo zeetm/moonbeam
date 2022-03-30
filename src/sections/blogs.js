@@ -45,7 +45,6 @@ const Blogs = () => {
           title="Mission/Vision"
           text={null}
         />
-        {/* <Box as={Masonry} options={masonryOptions} sx={styles.blogWrapper}> */}
         <div className={classes.blogWrapper}>
           {BLOG_DATA.map(
             ({ image, title, description, path, linkLabel }, index) => (
@@ -60,7 +59,6 @@ const Blogs = () => {
             )
           )}
         </div>
-        {/* </Box> */}
       </Container>
     </Box>
   );

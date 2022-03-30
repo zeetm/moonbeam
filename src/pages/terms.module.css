@@ -1,5 +1,4 @@
 .body {
-  /* max-height: calc(100vh - 230px); */
   min-height: calc(100vh - 230px);
   display: flex;
   flex-direction: column;
@@ -76,19 +75,13 @@
 
 .threeColumn {
   display: flex;
-  /* padding: 0 80px !important; */
   width: calc(100% + 128px) !important;
-  /* max-width: 100%; */
-  /* padding: 0 64px !important; */
   padding: 0 !important;
 }
 
 .threeColumn > div {
-  /* flex: calc(1/3); */
   width: calc(100%/3);
   margin: 0 auto;
-  /* flex-grow: inherit; */
-  /* text-align: left; */
   padding: 50px 0;
 
 }
@@ -105,22 +98,16 @@
   background-color: #eeeeee;
 }
 
-.threeColumn > div > p {
-
-}
-
 .account {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 600px; */
   width: 100%;
   background-image: url('../assets/account.jpg');
   background-size: cover;
 }
 
 .accountCard {
-  /* height: 80%; */
   width: 80%;
   max-width: 650px !important;
   max-height: 690px !important;

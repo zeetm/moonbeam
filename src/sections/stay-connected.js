@@ -47,7 +47,6 @@ const StayConected = () => {
   return (
     <Box as="section" sx={styles.subscribe} className={classes.wrapper} id='connected'>
       <Container>
-        {/* <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'f0bd54af4aac2e7120db31df45f361af'}> */}
         <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'9f0051b3ef357aa89c2dfb01ea587085'}>
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
             Stay Connected

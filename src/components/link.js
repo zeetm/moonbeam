@@ -1,6 +1,3 @@
-
-import { css, jsx } from '@emotion/react';
-
 import { NavLink as MenuLink, Link as A } from 'theme-ui';
 import NextLink from 'next/link';
 export function NavLink({ path, label, children, ...rest }) {

@@ -6,7 +6,6 @@ const Banner = () => {
   return (
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.container}>
-        {/* <Image sx={styles.logo} src={mbLogo} alt="logo image" /> */}
         <Heading as="h2">Moonbeam Trading Company</Heading>
         <Image src={diversity} sx={styles.greenTrade} alt="banner moc" />
       </Container>

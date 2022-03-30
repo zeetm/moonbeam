@@ -6,7 +6,6 @@ import applyImage from "assets/apply.png"
 import classes from "./employment.module.css";
 
 const EMPLOYMENT_DATA = [
-  //link to post?
   {
     image: applyImage,
     text: "Apply now!",

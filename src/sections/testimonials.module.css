@@ -1,10 +1,4 @@
-.swipe {
-  /* width: 90%; */
-  /* padding: 0 16px; */
-}
-
 .testimonialsWrapper {
-  /* width: 95%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +7,4 @@
 
 .testimonials {
   width: 95%;
-}
-
-.swipeWrapper {
-  
 }
