@@ -18,16 +18,16 @@ This website was developed for Moonbeam Trading Company by Rahwa Leakemariam and
 !['Landing of app'](https://github.com/rahleak/moonbeam/blob/master/src/assets/Landing.png)
 
 ### Mission/Vision
-!['Moonbeam Mission/Vision Section'](https://github.com/rahleak/moonbeam/blob/assets/src/assets/Mission-Vision.png)
+!['Moonbeam Mission/Vision Section'](https://github.com/rahleak/moonbeam/blob/master/src/assets/Mission-Vision.png)
 
 ### Contact
-!['Contact Form'](https://github.com/rahleak/moonbeam/blob/assets/src/assets/Contact.png)
+!['Contact Form'](https://github.com/rahleak/moonbeam/blob/master/src/assets/Contact.png)
 
  ### Terms and Conditions
-!['Terms and Conditions'](https://github.com/rahleak/moonbeam/blob/assets/src/assets/Terms.png)
+!['Terms and Conditions'](https://github.com/rahleak/moonbeam/blob/master/src/assets/Terms.png)
 
  ### Privacy Policy
-!['Privacy Policy'](https://github.com/rahleak/moonbeam/blob/assets/src/assets/Privacy.png)
+!['Privacy Policy'](https://github.com/rahleak/moonbeam/blob/master/src/assets/Privacy.png)
 
 
 
