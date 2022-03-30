@@ -44,9 +44,10 @@ const styles = {
   greenTrade: {
     display: "block",
     mx: "auto",
+    mb: '48px',
     position: "relative",
     maxWidth: ["80%", null, null, "50%", null, "50%"],
-    borderRadius: "5px"
+    borderRadius: "8px"
   },
   container: {
     position: "relative",

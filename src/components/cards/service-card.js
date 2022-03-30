@@ -107,6 +107,7 @@ const styles = {
     fontFamily: "DM Sans",
     fontWeight: 500,
     display: "inline-block",
+    cursor: 'pointer',
     img: {
       ml: "5px"
     }
