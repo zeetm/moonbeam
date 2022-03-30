@@ -29,8 +29,6 @@ This website was developed for Moonbeam Trading Company by Rahwa Leakemariam and
  ### Privacy Policy
 !['Privacy Policy'](https://github.com/rahleak/moonbeam/blob/assets/src/assets/Privacy.png)
 
- ### Privacy Policy
-!['Privacy Policy'](https://github.com/rahleak/moonbeam/blob/assets/src/assets/Privacy.png)
 
 
 
