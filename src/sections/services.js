@@ -15,13 +15,13 @@ const SERVICES_DATA = [
     text:
       "Our team of international trading specialists is active in engaging with new suppliers to source products from around the world.",
     heading: "Trade - Import and Export",
-    path: "#more"
+    path: "#products-and-partnerships"
   },
   {
     text:
       "Moonbeam Trading Company is dedicated to offering quality products from around the world to our customers.",
     heading: "Ecommerce",
-    path: "#more"
+    path: "#online-store"
   },
   {
     text:

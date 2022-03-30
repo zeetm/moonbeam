@@ -50,7 +50,7 @@ const Featured = () => {
       <Box as="section" sx={styles.featured}>
         <Container sx={styles.container}>
           <BlockTitle
-            title="More About Our Servies"
+            title="More About Our Services"
             text="Our team brings years of experience providing technology, trade, ecommerce and agri-food services you can trust"
           />
           <Box sx={styles.tabButtonTopWrapper}>
