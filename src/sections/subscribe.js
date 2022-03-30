@@ -18,7 +18,7 @@ const Subscribe = () => {
 
     console.log(name, message, email)
 
-    fetch("https://formsubmit.co/ajax/itsjoshuahaughton@gmail.com", {
+    fetch("https://formsubmit.co/ajax/moonbeamtradingco@gmail.com", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const Subscribe = () => {
         <Text as="p" className={classes.white}>
           Any questions or inquiries? Contact us to get more information!
         </Text>
-        <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'f0bd54af4aac2e7120db31df45f361af'}>
+        <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'moonbeamtradingco@gmail.com'}>
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
             Send Us an Email
           </Box>

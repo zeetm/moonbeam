@@ -18,7 +18,7 @@ const StayConected = () => {
 
     console.log(name, message, email)
 
-    fetch("https://formsubmit.co/ajax/jballerhaughton@icloud.com", {
+    fetch("https://formsubmit.co/ajax/mark.mcdonald@moonbeamtrading.ca", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const StayConected = () => {
   return (
     <Box as="section" sx={styles.subscribe} className={classes.wrapper} id='connected'>
       <Container>
-        <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'9f0051b3ef357aa89c2dfb01ea587085'}>
+        <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'mark.mcdonald@moonbeamtrading.ca'}>
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
             Stay Connected
           </Box>
