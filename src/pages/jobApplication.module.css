@@ -1,0 +1,110 @@
+.wrapper {
+  font-family: sans-serif;
+}
+
+.form {
+  max-width: 555px;
+  width: 85%;
+  font-family: sans-serif;
+  padding: 56px 0 32px 0;
+  opacity: 0.8;
+  transition: opacity 500ms ease;
+}
+
+.form:hover {
+  opacity: 1;
+}
+
+.form > label {
+  color: black;
+  font-size: larger;
+  margin-bottom: 12px;
+}
+
+.form > input {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 4px 0;
+  padding: 12px;
+  outline: none;
+  color: black;
+  transition: all 400ms ease-in-out;
+  width: 80%;
+}
+
+.form > textarea {
+  width: 80%;
+  margin-top: 16px;
+  min-height: 80px;
+  height: 80%;
+  outline: none;
+  resize: none;
+  padding: 8px 12px;
+  border: 1.4px solid black;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+  font-family: sans-serif;
+}
+
+.form > input:focus,
+.form > textarea:focus {
+  border-color: #0c79be;
+}
+
+.form > input:hover,
+.form > textarea:hover {
+  border-color: #86a28c;
+}
+
+.form > button {
+  transition: all 300ms ease;
+  cursor: pointer;
+  box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form > button:hover {
+  transform: translateY(-2px);
+  box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.3);
+  /* opacity: 1; */
+}
+
+.form > button:active {
+  transform: scale(0.95);
+}
+
+.sent {
+  color: green;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.sent > svg {
+  color: white;
+  background-color: green;
+  margin-left: 8px;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.spinner {
+  animation: loading 600ms infinite linear;
+  transition: all 300ms ease;
+  font-size: 26px;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.white {
+  color: white;
+}
