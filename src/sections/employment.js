@@ -4,6 +4,7 @@ import EmploymentCard from "components/cards/employment-card";
 import employmentImage from "assets/employment.png"
 import applyImage from "assets/apply.png"
 import classes from "./employment.module.css";
+import Inclusive from "components/cards/employment-inclusive-card";
 
 const EMPLOYMENT_DATA = [
   {
@@ -47,9 +48,7 @@ const Employment = () => {
             <Box sx={styles.heading} className={classes.header}>
               <Heading as="h3">Contact us about our opportunities at Jobs@moonbeamtrading.ca</Heading>
             </Box>
-            <Box sx={styles.heading} className={classes.header}>
-              <Heading as="h3">Think you don't qualify for the above positions? Apply anyway using the form below! At Moonbeam, we hire from a wholistic perspective and we want to hear your story!</Heading>
-            </Box>
+            <Inclusive />
           </Box>
         </Flex>
       </Container>
