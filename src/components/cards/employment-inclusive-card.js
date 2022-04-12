@@ -1,13 +1,18 @@
 import React from "react";
 import { Box, Text, Heading, Image } from "theme-ui";
 import classes from "./employment-card.module.css";
+import { Link } from "components/link";
 
 
-const Inclusive = () => {
+const Inclusive = ({link}) => {
   return (
 <Box sx={styles.heading} className={classes.header}>
 <Heading as="h3">Think you don't qualify for the above positions? Apply anyway using the form below! At Moonbeam, we hire from a wholistic perspective and we want to hear your story!</Heading>
+<div>
+<Link path="/application">
 <button className={classes.button}>APPLY HERE</button>
+</Link>
+</div>
 </Box>
   )
 }
