@@ -27,16 +27,20 @@ const jobApplication = () => {
   const [PeriodsOfLifeTransitions, setPeriodsOfLifeTransitions] = useState('');
   const [PositionApplyingFor, setPositionApplyingFor] = useState('')
   const [SuitableForThisRole, setSuitableForThisRole] = useState('')
+
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const[form2, setForm2] =useState({
+    country: ''
+  })
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true)
 
-    console.log(FirstName, LastName, PreferredName, Pronouns, LegallyEligibleToWork, Email, PhoneNumber, Address, PostalCode, HighestLevelOfEducation, FieldOfStudy, BarriersFacedCompletingEducation, BarriersFacedSeekingEmployment, IdentifyAsMemberOfVisibleMinority, PeriodsOfLifeTransitions, PositionApplyingFor, SuitableForThisRole)
+    console.log(FirstName, LastName, PreferredName, Pronouns, LegallyEligibleToWork, Email, PhoneNumber, Address, PostalCode, HighestLevelOfEducation, FieldOfStudy, BarriersFacedCompletingEducation, BarriersFacedSeekingEmployment, IdentifyAsMemberOfVisibleMinority, PeriodsOfLifeTransitions, PositionApplyingFor, SuitableForThisRole, form2)
 
-    fetch("https://formsubmit.co/ajax/zeinabtmohamed@gmail.com", {
+    fetch("https://formsubmit.co/ajax/zeina_16@hotmail.com", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
@@ -84,6 +88,8 @@ const jobApplication = () => {
         setPositionApplyingFor('')
         setSuitableForThisRole('')
 
+
+        setForm2
         setLoading(false)
         setSent(true)
         setTimeout(() => {
@@ -109,6 +115,19 @@ const jobApplication = () => {
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
             Please fill out the application below 
           </Box>
+
+
+          <label>
+            Country:
+            <select onChange={e => setForm2(e.target.value)} name ="country">
+              <option value="us">U.S</option>
+              <option value="canada">Canada</option>             
+              <option value="Mexico">Mexico</option>
+              <option value="Russia">Russia</option>              
+              <option value="Ukraine">Ukraine</option>
+            </select>
+          </label>
+
 
           <div className={classes.form} > First Name:
           <input
@@ -311,7 +330,6 @@ const jobApplication = () => {
 )}
 
 export default jobApplication;
-
 
 const styles = {
   subscribe: {
